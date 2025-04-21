@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 from .models import Class, Teacher, Student
 from .serializers import ClassSerializer, TeacherSerializer, StudentSerializer
@@ -30,3 +29,6 @@ def home(request):
             "Swagger docs": "/swagger/",
         }
     })
+
+
+
