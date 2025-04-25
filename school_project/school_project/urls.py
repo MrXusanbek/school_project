@@ -23,6 +23,7 @@ from rest_framework.permissions import AllowAny
 from school.views import home
 
 
+
 schema_view = get_schema_view(
    openapi.Info(
       title="School API",
@@ -40,6 +41,8 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
+
+
 
 
 
